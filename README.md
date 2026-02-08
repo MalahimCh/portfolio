@@ -8,7 +8,7 @@ This is a personal portfolio using HTML and CSS only.
 - CSS
 
 ## Live Link
-[View My CV]()
+[View My CV](https://portfolio-eta-gilt-w7mkjw6shr.vercel.app/)
 
 ## Author
 **Name:** Malahim Chaudhary
