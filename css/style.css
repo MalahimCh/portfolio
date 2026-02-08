@@ -317,6 +317,7 @@ section p {
   margin-top: 0.3rem;
 }
 
+
 /* DARK MODE */
 #theme-toggle:checked ~ main #projects .project-card {
   background: var(--card-dark);
@@ -358,6 +359,34 @@ section p {
     left: 5px;
   }
 }
+/* ================= CONTACT FORM ================= */
+#contact form {
+    display: flex; flex-direction: column; gap: 1rem; margin-top: 1.5rem;
+}
+#contact input, #contact textarea {
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-light);
+    font-size: 1rem;
+    transition: 0.3s;
+}
+#contact input:focus, #contact textarea:focus {
+    outline: none;
+    border-color: var(--blue);
+    box-shadow: 0 0 8px rgba(37,99,235,0.3);
+}
+#contact button {
+    width: max-content;
+    padding: 0.7rem 1.8rem;
+    background: var(--blue);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#contact button:hover { background: var(--blue-soft); transform: translateY(-2px); }
 
 /* ================= FOOTER ================= */
 footer {
@@ -375,6 +404,21 @@ footer {
 #theme-toggle:checked ~ footer {
     background: var(--bg-dark);
     color: var(--text-dark);
+}
+/* Default: Light mode */
+.icon-dark {
+    display: none;
+}
+
+/* Dark mode */
+#theme-toggle:checked ~ footer .social-links .icon-light,
+#theme-toggle:checked ~ main .social-links .icon-light {
+    display: none;
+}
+
+#theme-toggle:checked ~ footer .social-links .icon-dark,
+#theme-toggle:checked ~ main .social-links .icon-dark {
+    display: inline-block;
 }
 
 #theme-toggle:checked ~ header .navbar {
